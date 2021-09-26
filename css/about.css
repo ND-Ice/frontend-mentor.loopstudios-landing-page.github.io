@@ -1,0 +1,51 @@
+:root {
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-black: hsl(0, 0%, 0%);
+  --clr-dark-gray: hsl(0, 0%, 55%);
+  --clr-very-dark-gray: hsl(0, 0%, 41%);
+}
+
+.about-page {
+  padding: 8rem 1.5rem;
+  display: grid;
+  gap: 4rem;
+}
+.about__hero {
+  width: 100%;
+}
+
+.about__hero--desktop {
+  display: none;
+}
+
+.about__content {
+  text-align: center;
+}
+
+@media screen and (min-width: 1440px) {
+  .about-page {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 10%;
+  }
+
+  .about__hero--desktop {
+    display: block;
+  }
+
+  .about__hero--mobile {
+    display: none;
+  }
+
+  .content__wrapper {
+    position: relative;
+  }
+
+  .about__content {
+    text-align: left;
+    padding: 8rem;
+    position: absolute;
+    background: var(--clr-white);
+    left: -30%;
+    bottom: -20%;
+  }
+}

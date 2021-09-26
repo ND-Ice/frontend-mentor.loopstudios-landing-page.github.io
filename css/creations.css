@@ -1,0 +1,49 @@
+.creations-page {
+  padding: 2rem 1.5rem;
+}
+
+.creations__header {
+  text-align: center;
+}
+
+.creations__header .btn {
+  display: none;
+}
+
+.creations__list {
+  display: grid;
+  gap: 2rem;
+}
+
+.btn--mobile {
+  margin: 2rem auto;
+  display: block;
+}
+
+@media screen and (min-width: 1440px) {
+  .creations-page {
+    padding: 5rem 10% 10rem;
+  }
+  .creations__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .creations__heading {
+    margin-bottom: 0;
+  }
+
+  .creations__header .btn {
+    display: block;
+  }
+
+  .btn--mobile {
+    display: none;
+  }
+
+  .creations__list {
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 4rem;
+  }
+}

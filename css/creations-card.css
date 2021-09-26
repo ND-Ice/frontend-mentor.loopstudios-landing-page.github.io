@@ -1,0 +1,39 @@
+.creation-card {
+  position: relative;
+}
+
+.creation__image {
+  width: 100%;
+  transition: all 0.3s;
+}
+
+.creation__image--desktop {
+  display: none;
+}
+
+.creation__title {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  max-width: 10ch;
+  padding: 1rem;
+  transition: color 0.3s;
+}
+
+.creation-card:hover .creation__image {
+  opacity: 0.4;
+}
+
+.creation-card:hover .creation__title {
+  color: black;
+}
+
+@media screen and (min-width: 1024px) {
+  .creation__image--mobile {
+    display: none;
+  }
+
+  .creation__image--desktop {
+    display: block;
+  }
+}

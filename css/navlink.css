@@ -1,0 +1,36 @@
+:root {
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-black: hsl(0, 0%, 0%);
+  --clr-dark-gray: hsl(0, 0%, 55%);
+  --clr-very-dark-gray: hsl(0, 0%, 41%);
+}
+
+.nav__link {
+  position: relative;
+  font-weight: 400;
+  display: inline-block;
+}
+
+.nav__link::after {
+  content: "";
+  background: var(--clr-white);
+  border-radius: 1rem;
+  display: block;
+  height: 1px;
+  left: 50%;
+  margin-top: 5px;
+  position: absolute;
+  transform: translateX(-50%);
+  transition: all 0.3s;
+  width: 0px;
+}
+
+.nav__link:hover::after {
+  width: 100%;
+}
+
+@media screen and (min-width) {
+  .nav__link:hover {
+    width: 20px;
+  }
+}
