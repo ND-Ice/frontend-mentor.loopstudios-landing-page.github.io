@@ -29,8 +29,8 @@
   width: 100%;
 }
 
-@media screen and (min-width) {
-  .nav__link:hover {
+@media screen and (min-width: 1440px) {
+  .nav__link:hover::after {
     width: 20px;
   }
 }
